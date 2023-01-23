@@ -1,16 +1,17 @@
+import { useState } from 'react'
+import { Card, Image } from './appStyles'
 
-function BookThumb({ book }) {
+const BookThumb = ({ book }) => {
+
+
 
     return (
-        <div className="books">
-            <h1>BookThumb</h1>
-            {/* book.map((book) => (
-                <div key={book._id}>
-                    <h1> {book.title} </h1>
-                    <h2> {book.author} </h2>
-                    <img src={book.img} alt={book.title} />
-                </div>
-            )) */}
+        <div className="thumbnail" style={ {width: "18rem"} } >
+          <Card key={book._id}>
+            <h3> {book.title} </h3>
+            <img src={book.img} alt={book.title} />
+            <h4> {book.author} </h4>
+          </Card>
         </div>
     )
 }

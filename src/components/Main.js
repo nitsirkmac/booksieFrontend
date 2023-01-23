@@ -2,6 +2,8 @@ import { Routes, Route } from "react-router-dom"
 import { useEffect, useState } from "react"
 import Index from "../pages/Index"
 import Show from "../pages/Show"
+import AddBook from "../pages/AddBook"
+import BookList from "../components/BookList"
 
 function Main() {
 
@@ -32,7 +34,9 @@ function Main() {
     return (
         <main>
             <Routes>
-                <Route path='/' element={<Index book={book} createBook={createBook} />} />
+                <Route path='/' element={<Index book={book} />} />
+                <Route path='/booksie' element={<BookList book={book} />} />
+                <Route path='/booksie/new' element={<AddBook createBook={createBook} book={book} /> } />
                 <Route path='/booksie/:id' element={<Show book={book} />} />
             </Routes>
         </main>

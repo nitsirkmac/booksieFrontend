@@ -1,11 +1,20 @@
 import BookThumb from './BookThumb'
+import { ListView } from './appStyles'
 
-function BookList({ book }) {
+const BookList = ({ book }) => {
 
+const list = book.map((book, index) => {
     return (
-        <ul>
-        <BookThumb book={book}/>
-        </ul>
+        <ListView>
+            <BookThumb
+                key={book.id}
+                book={book}
+            />
+        </ListView>
+    )
+})
+    return (
+        <div id="list">{list}</div>
     )
 }
 

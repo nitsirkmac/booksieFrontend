@@ -1,13 +1,18 @@
 import { Link } from 'react-router-dom'
+import { Nav } from './appStyles'
 
 function Header() {
 
     return (
-        <nav className='nav'>
-            <Link to='/'>
+        <Nav className='nav'>
+            <Link to='/booksie'>
                 <div>Booklist</div>
             </Link>
-        </nav>
+            <Link to='/booksie/new'>
+                <div>Add Book</div>
+            </Link>
+            <div>Search</div>
+        </Nav>
     )
 }
 
