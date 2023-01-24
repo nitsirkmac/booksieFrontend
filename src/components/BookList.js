@@ -1,22 +1,22 @@
 import BookThumb from './BookThumb'
 import { ListView } from './appStyles'
 
-const BookList = ({ book }) => {
+const BookList = ({ book, }) => {
 
 const list = book.map((book, index) => {
     return (
-        <ListView>
+        <div>
             <BookThumb
                 key={book.id}
                 book={book}
                 />
-                {/* //update
-                //delete */}
-        </ListView>
+
+
+        </div>
     )
 })
     return (
-        <div id="list">{list}</div>
+        <ListView id="list">{list}</ListView>
     )
 }
 

@@ -35,6 +35,7 @@ export const Image = styled.img`
 export const ListView = styled.ul`
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 `;
 

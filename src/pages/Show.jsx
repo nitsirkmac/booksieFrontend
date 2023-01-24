@@ -1,11 +1,15 @@
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams, useNavigate } from 'react-router-dom'
 
-function Show  ()  {
 
-    const [show1, setShow1] = useState({})
+function Show  ( { deleteBook, updateBook, book })  {
 
     const { id } = useParams()
+    let navigate = useNavigate()
+    
+    const [show1, setShow1] = useState({})
+
+
 
     const getOneBook = async (id) => {
     const singleURL=`http://localhost:4000/booksie/${id}`
@@ -17,6 +21,13 @@ function Show  ()  {
         getOneBook(id)
     }, [])
 
+
+
+    const removeBook = () => {
+        deleteBook(show1._id);
+        navigate('/booksie')
+    };
+
     console.log(show1)
     return (
         <div key={show1._id} className="showPage">
@@ -25,7 +36,13 @@ function Show  ()  {
                 <h3> {show1.genre} </h3>
                 <img src={show1.img} alt={show1.title} />
                 <p> {show1.description} </p>
-            </div>
+                <button id='delete' onClick={removeBook}>
+                    REMOVE BOOK
+                </button>
+                <Link to={`/booksie/${id}/edit`} >
+                    <button id='update'> EDIT BOOK</button>
+                </Link>
+         </div>
     )
 }
 
