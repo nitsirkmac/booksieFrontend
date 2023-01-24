@@ -33,19 +33,18 @@ Google API \
 
 ## GETTING STARTED
 
-heroku\
+heroku
 https://booksiebackend.herokuapp.com/
 
-\
 
-trello:\
+trello:
 https://trello.com/b/KjRJxh4O/mern-stack-app-project
 
-Nelify\
+Nelify
 https://booksie.netlify.app/
-\
+
 
 ## FUTURE ENHANCEMENTS
-Authentication
-Authorization
-Review / Rating books
+* Authentication
+* Authorization
+* Review / Rating books
