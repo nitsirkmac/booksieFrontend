@@ -9,7 +9,9 @@ const list = book.map((book, index) => {
             <BookThumb
                 key={book.id}
                 book={book}
-            />
+                />
+                {/* //update
+                //delete */}
         </ListView>
     )
 })

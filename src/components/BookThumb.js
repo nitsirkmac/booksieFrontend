@@ -11,7 +11,7 @@ const BookThumb = ({ book }) => {
           <Link to={`/booksie/${book._id}`}>
             <Card key={book._id}>
                 <h3> {book.title} </h3>
-                <img src={book.img} alt={book.title} />
+                <Image src={book.img} alt={book.title} />
                 <h4> {book.author} </h4>
             </Card>
           </Link>

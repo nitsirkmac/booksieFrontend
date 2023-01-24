@@ -27,9 +27,14 @@ function Main() {
         getBookList()
     }
 
+    // const updateBook = async (book, id) => {}
+
+    // const deleteBook
+
     useEffect(() => {
         getBookList()
     }, [])
+
 
     return (
         <main>
