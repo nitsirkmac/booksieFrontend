@@ -51,7 +51,7 @@ export const TextArea = styled.input`
     width: 300px;
 `
 
-export const Info = styled.input`
+export const Info = styled.textarea`
     height: 100px;
     width: 300px;
 `;

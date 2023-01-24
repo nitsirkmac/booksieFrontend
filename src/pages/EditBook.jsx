@@ -1,20 +1,25 @@
  import { TextArea, Info } from '../components/appStyles'
- import { useState } from 'react'
+ import { useState, useEffect } from 'react'
  import {  useParams, useNavigate } from 'react-router-dom'
  
- function EditBook ({ book, updateBook }) {
+ function EditBook ({ updateBook }) {
 
 
     const { id } = useParams()
     let navigate = useNavigate()
 
-    const [editBook, setEditBook] = useState({
-        title: "",
-        author: "",
-        genre: "",
-        img: "",
-        description: ""
-    })
+    const [editBook, setEditBook] = useState({})    
+
+    const getOneBook = async (id) => {
+        const singleURL=`https://booksiebackend.herokuapp.com/booksie/${id}`
+        const res = await fetch(singleURL)
+        const json = await res.json()
+        setEditBook(json)
+        }
+        useEffect(() => {
+            getOneBook(id)
+        }, [])
+
 
     const handleChange = (event) => {
         setEditBook((prevState) => ({
@@ -25,7 +30,7 @@
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        updateBook(editBook, book._id)
+        updateBook(editBook, id)
         navigate(`/booksie/${id}`)
     }
 
