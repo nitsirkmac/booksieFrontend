@@ -58,7 +58,7 @@ function Main() {
                 <Route path='/booksie' element={<BookList book={book}  />} />
                 <Route path='/booksie/new' element={<AddBook createBook={createBook} book={book} /> } />
                 <Route path='/booksie/:id' element={<Show book={book} deleteBook={deleteBook} updateBook={updateBook} />} />
-                <Route path='/booksie/:id/edit' element={ <EditBook book={book} updateBook={updateBook} /> } />
+                <Route path='/booksie/:id/edit' element={ <EditBook  updateBook={updateBook} /> } />
             </Routes>
         </main>
     )
