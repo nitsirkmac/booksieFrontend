@@ -9,7 +9,7 @@ import EditBook from "../pages/EditBook"
 function Main() {
 
     const [ book, setBook ] = useState([])
-    const bookURL = "http://localhost:4000/booksie"
+    const bookURL = "https://booksiebackend.herokuapp.com/booksie/"
 
     const getBookList = async () => {
         const res = await fetch(bookURL)
@@ -41,7 +41,7 @@ function Main() {
 
     const deleteBook = async (id) => {
         await fetch(bookURL + id, {
-            method: 'DELETE'
+            method: 'DELETE',
         })
         getBookList()
     }

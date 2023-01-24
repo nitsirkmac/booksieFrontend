@@ -12,7 +12,7 @@ function Show  ( { deleteBook, updateBook, book })  {
 
 
     const getOneBook = async (id) => {
-    const singleURL=`http://localhost:4000/booksie/${id}`
+    const singleURL=`https://booksiebackend.herokuapp.com/booksie/${id}`
     const res = await fetch(singleURL)
     const json = await res.json()
     setShow1(json)
