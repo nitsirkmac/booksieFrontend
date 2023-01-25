@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 function GoogleBooks ({ getFromGoogle, googleBooks }) {
     const [searchTitle, setSearchTitle] = useState('') 
@@ -12,12 +12,20 @@ function GoogleBooks ({ getFromGoogle, googleBooks }) {
         getFromGoogle(searchTitle)
     }
 
-    return googleBooks.map ? (
+    return googleBooks.items ? (
         <>
-
-            <section>
-             
-            </section>
+        <form onSubmit={handleSubmit}>
+        <input type='text' onChange={handleChange} value={searchTitle} />
+        <button type="submit"></button>
+        </form>
+        
+        <section>
+        <img src={googleBooks.items[0].volumeInfo.imageLinks.thumbnail} alt={googleBooks.title} />
+          <h1> {googleBooks.items[0].volumeInfo.authors[0]}</h1>
+          <h2> {googleBooks.items[0].volumeInfo.categories}</h2>
+          <h1>{googleBooks.items[0].volumeInfo.title}</h1>
+          <h4>{googleBooks.items[0].volumeInfo.description} </h4>
+        </section>
         </>
     ) : (
         <form onSubmit={handleSubmit}>
