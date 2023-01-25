@@ -6,10 +6,10 @@ Greetings! We are pleased to introduce you to Booksie, a web-based application d
 
 # PROJECT CONTRIBUTORS
 
-Krissy Macdonald\
-Hanan Mohamed\
-Ashton Bowens\
-Ermiyas Hailemichael
+Krissy Macdonald
+Hanan Mohamed
+Ashton Bowens
+Ermiyas Hailemichae
 
 ## USER STORIE
 * As a user, I can see the book's cover , synopsis, title, and author, on show page.
@@ -20,15 +20,16 @@ Ermiyas Hailemichael
 * As a user, I can view the information of a single book.
 
 ## WIREFRAMES
- ![alt text]([[image.png](https://i.imgur.com/YrbgxQY.png)](https://i.imgur.com/kts2jQt.png)) 
+ ![alt text]((https://i.imgur.com/YrbgxQY.png)) 
 ## SCREEN SHOTS
- ![alt text]([[image.png](https://i.imgur.com/YrbgxQY.png)](https://i.imgur.com/YrbgxQY.png)) 
+ ![alt text]((https://i.imgur.com/YrbgxQY.png)) 
+ 
 ## TECHNOLOGIES
-ReactJS \
-ExpressJS \
-MongoDB \
-NodeJS \
-Google API \
+ReactJS 
+ExpressJS 
+MongoDB 
+NodeJS 
+Google API 
 
 
 ## GETTING STARTED
@@ -48,3 +49,4 @@ https://booksie.netlify.app/
 * Authentication
 * Authorization
 * Review / Rating books
+
