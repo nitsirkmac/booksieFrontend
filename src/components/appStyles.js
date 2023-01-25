@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 
+
+
 // colors
 export const colors = {
     dark: 'black',
-    main: 'red',
-    middle: '#6E0A1E',
-    light: 'goldenrod'
+    main: 'black',
+    middle: 'black',
+    light: 'black'
 };
 
 // images
@@ -14,7 +16,9 @@ export const images = {
 }
 
 export const Card = styled.div`
-    border: 2px solid ${colors.light};
+box-shadow: 0 2px 5px;
+border: 1px solid black;
+font-weight: 600;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -44,22 +48,33 @@ export const Form = styled.form`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 300px;
+    gap: 10px;
+    
 `;
 
 export const TextArea = styled.input`
     width: 300px;
+    box-shadow: 0 2px 5px;
+  border-radius: 5px;
+  border: none;
 `
 
 export const Info = styled.textarea`
     height: 100px;
     width: 300px;
+    box-shadow: 0 2px 5px;
+  border-radius: 5px;
+  border: none;
 `;
+
+
 
 export const Nav = styled.nav`
     display: flex;
     justify-content: space-evenly;
     color: ${colors.main};
+    
 `;
 
 export const Quote = styled.h1`
