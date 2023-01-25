@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-function GoogleBooks ({ getFromGoogle, googleBooks }) {
-    const [searchTitle, setSearchTitle] = useState('') 
+function GoogleBooks({ getFromGoogle, googleBooks }) {
+    const [searchTitle, setSearchTitle] = useState('')
 
     const handleChange = (event) => {
         setSearchTitle(event.target.value)
@@ -18,7 +18,7 @@ function GoogleBooks ({ getFromGoogle, googleBooks }) {
         <input type='text' onChange={handleChange} value={searchTitle} />
         <button type="submit"></button>
         </form>
-        
+
         <section>
         <img src={googleBooks.items[0].volumeInfo.imageLinks.thumbnail} alt={googleBooks.title} />
           <h1> {googleBooks.items[0].volumeInfo.authors[0]}</h1>
@@ -29,8 +29,8 @@ function GoogleBooks ({ getFromGoogle, googleBooks }) {
         </>
     ) : (
         <form onSubmit={handleSubmit}>
-        <input type='text' onChange={handleChange} value={searchTitle} />
-        <button type="submit"></button>
+            <input type='text' onChange={handleChange} value={searchTitle} />
+            <button type="submit"></button>
         </form>
     )
 }
