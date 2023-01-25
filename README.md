@@ -21,8 +21,9 @@ Ermiyas Hailemichae
 
 ## WIREFRAMES
  ![alt text](https://trello.com/1/cards/63d0dabd01913e2f4e6d633b/attachments/63d0dba966ba38b8a3349c50/previews/63d0dbaa66ba38b8a3349c61/download/wireframe.png) 
+
 ## SCREEN SHOTS
- ![alt text]((https://trello.com/1/cards/63d0daf6dfc54cde9c2d0198/attachments/63d0dbda5987a9dcf7af099b/previews/63d0dbdc5987a9dcf7af0a88/download/site.png)) 
+ ![alt text](https://trello.com/1/cards/63d0daf6dfc54cde9c2d0198/attachments/63d0dc6a0d109ddb57b96041/previews/63d0dc6c0d109ddb57b969b4/download/site.png) 
 
 ## TECHNOLOGIES
 ReactJS 
