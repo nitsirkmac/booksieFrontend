@@ -23,7 +23,7 @@ Ermiyas Hailemichae
  ![alt text]((https://i.imgur.com/YrbgxQY.png)) 
 ## SCREEN SHOTS
  ![alt text]((https://i.imgur.com/YrbgxQY.png)) 
- 
+
 ## TECHNOLOGIES
 ReactJS 
 ExpressJS 
