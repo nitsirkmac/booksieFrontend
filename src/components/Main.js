@@ -5,8 +5,23 @@ import Show from "../pages/Show"
 import AddBook from "../pages/AddBook"
 import BookList from "../components/BookList"
 import EditBook from "../pages/EditBook"
+import GoogleBooks from '../pages/GoogleBooks'
 
 function Main() {
+
+    const [googleBooks, setGoogleBooks] = useState([])
+
+    const getFromGoogle = async (bookTitle) => {
+        const gbURL = `https://www.googleapis.com/books/v1/volumes?q=intitle:${bookTitle}&printType=books&key=AIzaSyC0-RbX4rAq7mz2qJ0IdZZkq7UM7rcusss`
+        const res = await fetch(gbURL);
+        const json = await res.json();
+        setGoogleBooks(json)
+    }
+    useEffect(() => {
+        getFromGoogle()
+    }, [])
+    console.log(googleBooks)
+
 
     const [ book, setBook ] = useState([])
     const bookURL = "https://booksiebackend.herokuapp.com/booksie/"
@@ -59,6 +74,7 @@ function Main() {
                 <Route path='/booksie/new' element={<AddBook createBook={createBook} book={book} /> } />
                 <Route path='/booksie/:id' element={<Show book={book} deleteBook={deleteBook} updateBook={updateBook} />} />
                 <Route path='/booksie/:id/edit' element={ <EditBook  updateBook={updateBook} /> } />
+                <Route path='/booksie/search' element={ <GoogleBooks getFromGoogle={getFromGoogle} googleBooks={googleBooks} /> } />
             </Routes>
         </main>
     )

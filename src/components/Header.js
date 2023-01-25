@@ -11,7 +11,9 @@ function Header() {
             <Link to='/booksie/new'>
                 <div>Add Book</div>
             </Link>
-            <div>Search</div>
+            <Link to='/booksie/search'>
+                <div>Search</div>
+            </Link>
         </Nav>
     )
 }
