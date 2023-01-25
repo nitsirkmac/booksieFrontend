@@ -20,9 +20,9 @@ Ermiyas Hailemichael
 * As a user, I can view the information of a single book.
 
 ## WIREFRAMES
- ![alt text](https://trello.com/1/cards/63bf7825bb31aa01ebad3be3/attachments/63bf7825bb31aa01ebad3c1d/previews/63bf7826bb31aa01ebad3c2f/download/image.png) 
+ ![alt text]([[image.png](https://i.imgur.com/YrbgxQY.png)](https://i.imgur.com/kts2jQt.png)) 
 ## SCREEN SHOTS
-
+ ![alt text]([[image.png](https://i.imgur.com/YrbgxQY.png)](https://i.imgur.com/YrbgxQY.png)) 
 ## TECHNOLOGIES
 ReactJS \
 ExpressJS \
