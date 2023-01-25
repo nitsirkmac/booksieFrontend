@@ -52,8 +52,12 @@ input{
    main{
     display: flex;
     justify-content: center;
-    
+    flex-direction: column;
+    margin: 100px ;
+    gap:10px;
    }
+
+  
    /* ======================================== */
 
    /*Show page class*/
